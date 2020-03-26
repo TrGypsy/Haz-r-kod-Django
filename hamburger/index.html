@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-{% load static%}
+{% load static %}
 
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umut</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'blog/menu.css' %}">
+    <title> Umut </title>
+ 
+
+    <!-- Hamburger  menu  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'post/hambur.css' %}">
+
+  
+
+    <!-- Ana ayarlar  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'post/style.css' %}">
+  
+
+    <!-- Logo -->
+    <link rel="icon" href="{% static 'img/index.svg' %}" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="menu-container">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Anasyfa</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">hakkında</a></li>
-                        <li><a href="#">bbb</a></li>
-                    </ul>
-                </div>
+
+<div class="menu-container">
+
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+        <div></div>
+    </div>
+    <div class="menu">
+        <div>
+            <div class="temp">
+                <ul class="nav-links">
+                    <li><a href="#">Anasyfa</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">hakkında</a></li>
+                    <li><a href="#">bbb</a></li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="content">
-            <h1>Hosgeldınız</h1>
-            <p>ne yaparım bende bılasdasdasdasdasdasd</p>
-            <a href="#" class="btn">Read More</a>
-        </div>
-    </div>
-
+</div>
+    
+<div class="logo">
+    <a href="#"><img class="svg" src="{% static 'img/index.svg' %}" style="width: 60px; height: 60px"></a>
+</div>
+       
 </body>
-
+    
 </html>
